@@ -1,0 +1,8 @@
+replicaCount: 3 # Давай бахнем 3 штуки для красоты
+image:
+  repository: nginxdemos/hello
+  tag: latest
+service:
+  type: NodePort
+  port: 80
+  nodePort: 30081 # Сделаем другой порт, чтобы не конфликтовало
